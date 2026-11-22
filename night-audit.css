@@ -1,0 +1,64 @@
+.departure-sheet,.inventory-night {display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:6vw}
+.departure-sheet {background:#a9a497;color:#252620}
+.departure-sheet ol {list-style:none;padding:0;margin:0;border-top:1px solid #625f55}
+.departure-sheet li {display:grid;grid-template-columns:72px 1fr;gap:8px;padding:16px 0;border-bottom:1px solid #625f55}
+.departure-sheet li span:last-child:not(:nth-child(2)) {grid-column:2}
+.departure-sheet .erased {text-decoration:line-through;color:#534a41}
+.audit-desk {background:#282c25;color:#dcd8c8}
+.audit-intro {max-width:570px}
+.audit-layout {display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr);gap:24px;margin-top:34px}
+.audit-files,.audit-response {background:#141914;border:1px solid #626858;padding:clamp(14px,3vw,32px)}
+.audit-files details {border-bottom:1px solid #4c5548;padding:13px 0}
+.audit-files summary,.voice-terminal summary,.inventory-copy summary {cursor:pointer}
+.audit-files summary time {float:right;color:#b1aa91;letter-spacing:.05em}
+.audit-files dl {display:grid;grid-template-columns:1fr 1fr;gap:5px 15px;color:#c2bcaa}
+.audit-files dd {margin:0}
+.audit-files details p {color:#ddac95}
+.audit-response button {display:block;text-align:left;width:100%;background:#23291f;border:1px solid #626858;padding:9px 12px;margin:8px 0}
+.audit-response button[aria-pressed=true] {color:#f9dfbe;border-color:#a98665;background:#3a3328}
+#audit-result {color:#dbac98;min-height:3.5em}
+.audit-corridor {position:relative;isolation:isolate;background:#0a0e0b;color:#d3cdb8;min-height:160svh}
+.hall-depth {position:sticky;top:0;height:100svh;overflow:hidden;display:grid;place-items:center;background:#131810}
+.hall-depth:before,.hall-depth:after {content:"";position:absolute;inset:0}
+.hall-depth:before {
+  background: repeating-linear-gradient(0deg,#2d2b21 0 2px,#141710 3px 21px);
+  clip-path:polygon(0 100%,38% 59%,62% 59%,100% 100%);
+}
+.hall-depth:after {
+  background:repeating-linear-gradient(0deg,#2a3023 0 1px,#11170f 2px 31px);
+  clip-path:polygon(0 0,38% 30%,38% 59%,0 100%,0 0,100% 0,62% 30%,62% 59%,100% 100%);
+}
+.hall-light {position:absolute;z-index:2;inset:0;background:radial-gradient(ellipse at 50% 33%,#8679504f,transparent 39%),linear-gradient(90deg,#080905c4,transparent 40%,transparent 60%,#080905c4)}
+.hall-door {position:absolute;z-index:1;left:43%;right:43%;top:32%;bottom:40%;text-align:center;padding-top:18px;border:2px solid #595440;background:#171912;color:#c8ba91;font:.8rem Consolas,monospace}
+.hall-description {position:relative;margin-top:-55svh;padding:0 8vw 10svh;min-height:108svh;display:grid;align-content:end;justify-items:start}
+.hall-description h2 {font-size:clamp(4rem,10vw,9rem);text-shadow:0 0 28px #000}
+.hall-steps {width:min(100%,650px);background:#0a0d08db;border:1px solid #62634e;padding:8px 18px}
+.hall-steps p {display:grid;grid-template-columns:55px 1fr;gap:10px;margin:0;padding:10px 0;border-bottom:1px solid #34392d}
+.hall-steps p:last-child {border:0;color:#e1a58e}
+.dispatch {background:#15110d;color:#ded0bc}
+.voice-terminal {background:#0f0d0a;border:1px solid #625143;max-width:900px;padding:clamp(20px,5vw,53px)}
+.voice-terminal details {margin-top:21px}
+.voice-terminal p[aria-live] {min-height:3.5rem;color:#e4bfaa}
+.voice-wave {height:85px;background:repeating-linear-gradient(90deg,#806757 0 2px,transparent 2px 7px);clip-path:polygon(0 47%,10% 42%,15% 48%,20% 27%,28% 41%,34% 18%,44% 39%,52% 43%,57% 22%,65% 0%,74% 33%,85% 43%,90% 19%,100% 46%,100% 55%,91% 79%,85% 56%,74% 70%,65% 100%,57% 76%,52% 57%,44% 63%,34% 81%,28% 59%,20% 73%,15% 52%,10% 58%,0 53%)}
+.voice-terminal[data-playing=true] .voice-wave {background:repeating-linear-gradient(90deg,#bc7560 0 2px,transparent 2px 7px)}
+.inventory-night {background:#120905;color:#e3cdb5;min-height:100svh}
+.inventory-photo {min-height:clamp(280px,42vw,560px);background:radial-gradient(ellipse at 53% 60%,transparent,#120905 88%),linear-gradient(0deg,#3f2019b0,#160b08aa),url(room.jpg) center 77%/cover;box-shadow:0 0 0 1px #5d3627}
+.inventory-copy details {margin-top:24px;color:#d2ae97}
+@media(max-width:700px) {
+  .departure-sheet,.inventory-night,.audit-layout {grid-template-columns:1fr;gap:20px}
+  .hall-door {left:35%;right:35%}
+}
+
+.lost-property {background:#180d09;color:#dcc7af}
+.lost-cabinets {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin-top:30px}
+.lost-cabinets details {border:1px solid #735245;background:#261610;padding:15px;box-shadow:inset 0 -4px #100803}
+.lost-cabinets summary {cursor:pointer;color:#e5caab}
+.lost-cabinets details[open] {background:#110906;min-height:160px}
+.lost-cabinets p {color:#d2ae9a}
+.false-dawn {min-height:128svh;display:grid;align-content:space-between;position:relative;isolation:isolate;padding:10svh 8vw 13svh;background:linear-gradient(180deg,#cbab7f78 0%,#2d1b11d4 58%,#0b0503 96%),url(room.jpg) center/cover;color:#fff0d7;text-shadow:0 2px 13px #150c07}
+.false-dawn h2 {font-size:clamp(4rem,10vw,9rem)}
+.dawn-time {font-size:clamp(1.1rem,3vw,2rem);justify-self:end;color:#eec5aa}
+.dawn-time span {text-decoration:line-through;margin-right:12px}
+.dawn-time strong {color:#f0ad92}
+.dawn-foot {max-width:600px;margin:0}
+@media(max-width:700px) {.lost-cabinets {grid-template-columns:1fr}}

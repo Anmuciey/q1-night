@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Q1 入夜 · 把夜留给自己</title>
+<meta name="description" content="Q1 入夜睡眠空间。一间卧室，一场安静的入眠。">
+<link rel="stylesheet" href="style.css">
+<script src="night.js" defer></script>
+<script src="room217.js" defer></script>
+<link rel="stylesheet" href="afterhours.css">
+<script src="afterhours.js" defer></script>
+<link rel="stylesheet" href="night-audit.css">
+<script src="night-audit.js" defer></script>
+</head>
+<body>
+<header id="top" class="bar"><a class="brand" href="#top">Q1 <span>入夜</span></a><nav><a href="#room">客房</a><a href="#routine">入夜流程</a><a class="pill" href="#stay">体验一晚</a></nav></header>
+<aside class="night-chrome" aria-label="客房状态" hidden>
+  <a href="#top" class="chrome-brand">Q1 <span id="chrome-name">入夜</span></a>
+  <span id="chrome-status">217 房 · 住客 1</span>
+  <a id="chrome-link" href="#door">退房</a>
+</aside>
+<main>
+<section class="hero" aria-labelledby="title"><div><p class="label">Q1 SLEEP STUDIO</p><h1 id="title">把夜，<br>留给自己。</h1><p>一间卧室，一场安静的入眠。</p><a class="button light" href="#room">探索睡眠空间</a></div><span class="hero-index label">Q1 客房　/　18:42</span></section>
+<section id="room" class="section room"><div><p class="label">客房设计</p><h2>一间只为睡觉<br>而设计的房间。</h2><p>光落在床沿，织物收住回声。拉上帘子，城市就留在窗外。</p></div><figure><img src="room.jpg" alt="黄昏时的 Q1 客房，床边亮着两盏灯"><figcaption>双侧床灯 · 遮光帘 · 一人入住</figcaption></figure></section>
+<section class="section lighting" id="lighting">
+  <div>
+    <p class="label">客房里的光</p>
+    <h2>留一盏灯。</h2>
+    <p>起夜时不必摸黑。选一盏床头灯，我们会把它留到天亮。</p>
+    <div class="switches" aria-label="床灯预览">
+      <button class="button outline" type="button" data-lamp="left" aria-pressed="true">左侧床灯</button>
+      <button class="button outline" type="button" data-lamp="right" aria-pressed="false">右侧床灯</button>
+    </div>
+    <p class="label light-status" id="light-status" aria-live="polite">左侧床灯亮着</p>
+  </div>
+  <div class="lamp-view" id="lamp-view" data-lamp="left" role="img" aria-label="客房床灯预览"></div>
+</section>
+<section id="routine" class="section routine"><div class="section-head"><p class="label">入夜流程</p><h2>睡前的事，交给房间。</h2><p>你只需要选好起床时间。剩下的，会在合适的时候发生。</p></div><ol class="timeline"><li><time>19:30</time><div><h3>光线转暖</h3><p>给阅读留一盏灯，也给眼睛一点适应的时间。</p></div></li><li><time>21:45</time><div><h3>窗帘合拢</h3><p>两层织物隔开街灯和车声。</p></div></li><li><time>22:30</time><div><h3>进入静夜模式</h3><p>右侧床灯先熄灭，左侧为起夜保留微光。</p></div></li><li><time>02:17</time><div><h3>再次确认入睡</h3><p>如果右侧床灯亮起，请保持原来的睡姿。</p></div></li></ol></section>
+<section class="section guide"><p class="label">住客指南</p><h2>第一次入住？</h2><div class="questions"><details><summary>房间适合两个人入住吗？</summary><p>每间客房只登记一位住客。床很宽，您可以睡在任意一侧。夜里请留出另一侧。</p></details><details><summary>我可以自己关掉床灯吗？</summary><p>左侧床灯可以手动关闭。右侧床灯由床垫的压力感应控制。请勿用行李测试。</p></details><details><summary>夜里有人敲门怎么办？</summary><p>房务人员会留在走廊。听到第二次敲门时，请先确认声音来自门的哪一侧。</p></details></div></section>
+
+<section id="stay" class="section checkin"><div><p class="label">单人体验</p><h2>今晚，睡个好觉。</h2><p>领取一张体验房卡，查看当晚的房务时间表。</p></div><div class="keycard"><span class="label">Q1　/　客房门卡</span><strong>217</strong><button id="check-in" class="button light" type="button">领取体验房卡</button><p id="receipt" aria-live="polite">入住人数　1</p></div></section>
+<section class="section evening" aria-labelledby="evening-title">
+  <div class="evening-head"><p class="label">住客专享 · 睡前读物</p><h2 id="evening-title">睡前，读几页。</h2></div>
+  <div class="evening-cards">
+    <details><summary><span>睡眠笔记</span><strong>如何记住一个梦</strong></summary><p>醒来时先别动。记下房间里能看见的三样东西，再闭一次眼。睁开以后，数一数是不是还剩三样。</p></details>
+    <details><summary><span>客房习惯</span><strong>为什么柜门要留一道缝</strong></summary><p>木头会呼吸。离店那天如果发现缝隙变宽，通知房务即可。我们会在你睡着以后把它推回去。</p></details>
+    <details><summary><span>住客须知</span><strong>听见邻房的声音</strong></summary><p>217 的右侧是外墙。此项内容正在修订。</p></details>
+  </div>
+</section>
+<section class="section testimonials"><p class="label">住客留言</p><h2>退房后，留几句话。</h2><div class="notes"><article><p>“灯的亮度刚好。我十点半躺下，一觉睡到了七点。”</p><small>217 房 · 已退房</small></article><article><p>“半夜床灯亮过一次。我伸手去关，摸到另一只手也在找开关。”</p><small>217 房 · 已退房</small></article><article><p>“早上服务员问我同行的人怎么没出来。我说我一个人来的。她把早餐放回了桌上。”</p><small>217 房 · 退房待确认</small></article></div></section>
+<section class="section mail" data-corruption="1">
+  <div class="mail-letter">
+    <div class="letter-head"><strong>Q1 入夜</strong><span class="label">预定信息更新</span></div>
+    <p class="label">收件人：217 房住客</p>
+    <h2>今晚见。<span aria-hidden="true">今晚见。</span></h2>
+    <p>您补订的那一份早餐已安排。请在退房前把另一张门卡留在床头。</p>
+    <details><summary>查看原始确认信</summary><p>入住人数　1<br>门卡发放　1<br>第二位住客　已在房内</p></details>
+    <div class="mail-footer label">本通知于 18:42 发送　<span>02:17:02</span></div>
+  </div>
+</section>
+<section class="section departure-sheet">
+  <div><p class="label">住客服务</p><h2>退房前，<br>再检查一次。</h2><p>您可以带走自己的东西。属于房间的东西，请留在原处。</p></div>
+  <ol><li><strong>桌面</strong><span>一张发给您的房卡。</span></li><li><strong>窗台</strong><span>两杯水。靠窗的那杯未动过。</span></li><li><strong>床头</strong><span>检查两盏灯的位置是否和入住时一致。</span></li><li><strong>床下</strong><span class="erased">由房务人员检查</span><span>请在门外等候。</span></li></ol>
+</section>
+<section class="section record" id="record" data-corruption="2"><div class="section-head"><p class="label">217 房 · 夜间房务</p><h2>有一条记录<br>需要您确认。</h2></div><div class="ledger"><p><time>22:30</time><span>右侧床灯熄灭</span><span>住客 1</span></p><p><time>00:46</time><span>走廊感应器离线</span><span>门锁闭合</span></p><p><time>02:16</time><span>房内侧门把转动</span><span>门锁闭合</span></p><p><time>02:17</time><span>右侧床垫承重</span><span>住客 2</span></p><p><time>02:17</time><span>右侧床垫承重消失</span><span>住客 2</span></p></div></section>
+<section class="section audit-desk" data-corruption="2" id="audit">
+  <p class="label">217 房 · 夜间交接台</p><h2>请复核这次退房。</h2>
+  <p class="audit-intro">系统只收到一张房卡。夜班留下三份原始记录，请核对后标记需要撤回的项目。</p>
+  <div class="audit-layout">
+    <div class="audit-files">
+      <details><summary>门锁事件 <time>02:16:58</time></summary><dl><dt>室外刷卡</dt><dd>无</dd><dt>室内旋钮</dt><dd>转动</dd><dt>锁舌</dt><dd>闭合</dd></dl><p>门把从房内被压下时，住客仍在床上。</p></details>
+      <details><summary>载重记录 <time>02:17:00</time></summary><dl><dt>左侧</dt><dd>有载重</dd><dt>右侧</dt><dd>无载重</dd><dt>床架底部</dt><dd>持续向上受力</dd></dl><p>当班房务申请将床抬离地面。申请已撤回。</p></details>
+      <details><summary>门卡回收 <time>02:17:02</time></summary><dl><dt>前台收到</dt><dd>一张</dd><dt>卡面房号</dt><dd>217</dd><dt>批准人</dt><dd>217 房住客</dd></dl><p>卡片从房内递出。递卡的人没有做自我介绍。</p></details>
+    </div>
+    <div class="audit-response"><p class="label">请选择一项复核</p><button type="button" data-audit="lock">门锁状态</button><button type="button" data-audit="bed">床下受力</button><button type="button" data-audit="card">房卡归还</button><p id="audit-result" aria-live="polite">等待提交。</p></div>
+  </div>
+</section>
+<section class="section floor" data-corruption="2">
+  <div><p class="label">楼层导览 · 夜间版</p><h2>离开客房。</h2><p>白天的路线已暂停。请在平面图上确认出口。</p><p id="route-result" class="route-result" aria-live="polite">起点　217 房</p></div>
+  <div class="floor-map" id="floor-map" aria-label="楼层平面图">
+    <span class="map-caption label">二层　/　疏散示意</span>
+    <div class="map-grid"><span>215</span><span>216</span><button type="button" data-route="stair">楼梯间</button><span>走廊</span><strong>217</strong><span>走廊</span><span>219</span><span>220</span><button type="button" data-route="lift">电梯</button></div>
+    <span class="map-footer label">当前位置：217 房</span>
+  </div>
+</section>
+<section id="review" class="section review" data-corruption="3"><p class="label">217 房 · 走廊回放</p><h2>门一直没有打开。</h2><div class="monitor"><canvas id="hall" aria-hidden="true"></canvas><span class="label camera">CAM 217 / <time id="camera-time">02:16:54</time></span><span class="label signal" id="signal">走廊 · 无活动</span></div><div class="controls"><button class="button outline" id="replay" type="button">重放八秒</button><button class="button outline" id="sound" type="button" aria-pressed="false">开启环境音</button></div><p class="quiet">房务备注：第二下敲门来自房内。回放结束后，请看床灯。</p></section>
+<section class="section returned" aria-labelledby="returned-title">
+  <div>
+    <p class="label">客房里的光</p>
+    <h2 id="returned-title">留一盏灯。</h2>
+    <p id="returned-copy">你选的那盏还亮着。另一盏刚刚被人打开。</p>
+    <div class="switches" aria-label="217 房床灯">
+      <button class="button outline" id="lamp-off" type="button">关掉我选的灯</button>
+    </div>
+    <p id="returned-status" aria-live="polite" class="label light-status">住客端 · 两盏床灯开启</p>
+  </div>
+  <div class="lamp-view" id="returned-view" data-lamp="both" role="img" aria-label="夜里的 217 房"></div>
+</section>
+<section class="audit-corridor" data-corruption="3" aria-labelledby="hall-title">
+  <div class="hall-depth" aria-hidden="true"><div class="hall-light"></div><div class="hall-door">217</div></div>
+  <div class="hall-description">
+    <p class="label">楼梯间 · 通行记录</p><h2 id="hall-title">沿墙走。</h2>
+    <div class="hall-steps"><p><strong>一层</strong><span>楼梯向下。墙上的箭头指向上面。</span></p><p><strong>一层</strong><span>同一块地砖又出现了，裂缝比刚才长了一截。</span></p><p><strong>一层</strong><span>前面有人停下。你停下以后，脚步声多走了两步。</span></p><p><strong>217</strong><span>有人从门缝里把通行牌递给你。上面写着「请回房」。</span></p></div>
+  </div>
+</section>
+<section class="repeat-room" data-corruption="4">
+  <div class="repeat-photo"></div><div class="repeat-text">
+    <p class="label">Q1 SLEEP STUDIO<span aria-hidden="true"> / Q1 SLEEP STUDIO</span></p>
+    <h2 data-echo="留给自己。">把夜，<br>留给自己。</h2>
+    <p>一间卧室，一场安静的入眠。</p>
+    <a class="button outline" href="#bedside">探索睡眠空间</a>
+    <span class="repeat-time label">217 房　/　02:17:02</span>
+  </div>
+</section>
+<section class="section transcript" data-corruption="4">
+  <div class="transcript-head label"><span>217 房 / 前台通话转写</span><span>时间码异常</span></div>
+  <div class="transcript-lines">
+    <p><time>02:17:02</time><span class="speaker">住客</span><span>我想换一间房。</span></p>
+    <p><time>02:17:03</time><span class="speaker">前台</span><span>好。请先让另一位住客离开床底。</span></p>
+    <p><time>02:17:03</time><span class="speaker">住客</span><span>你怎么知道它在下面？</span></p>
+    <p><time>02:17:03</time><span class="speaker">前台</span><span>……</span></p>
+    <p><time>02:17:03</time><span class="speaker">床底</span><span>我想换一间房。</span></p>
+  </div>
+  <p class="label transcript-end">录音仍在继续 <span aria-hidden="true">■</span></p>
+</section>
+<section class="section dispatch" data-corruption="4" aria-labelledby="dispatch-title">
+  <p class="label">前台 · 内线 0</p><h2 id="dispatch-title">你有一条新留言。</h2>
+  <div class="voice-terminal">
+    <div class="voice-wave" aria-hidden="true"></div>
+    <p class="label" id="voice-clock">00:00 / 00:14</p>
+    <p id="voice-caption" aria-live="polite">留言由 217 房拨入。</p>
+    <button type="button" class="button outline" id="voice-replay">回放留言字幕</button>
+    <details><summary>阅读留言转写</summary><p>「前台吗？我在楼下。房里的那个人为什么还在用我的卡？」<br>「请不要告诉他我打过电话。」<br>「他刚刚把灯关了。」</p></details>
+  </div>
+</section>
+<section class="bedroom" id="bedside" data-corruption="5"><div class="bed-image" aria-hidden="true"><span class="shape"></span></div><div class="bed-copy"><p class="label">217 房 · 02:17:02</p><h2>右侧床灯亮了。</h2><p>床罩平平整整。<br>垂到地上的那一角，正被一点点往里拉。</p></div></section>
+<section class="section inventory-night" data-corruption="5" aria-labelledby="inventory-title">
+  <div class="inventory-photo" aria-hidden="true"></div>
+  <div class="inventory-copy"><p class="label">217 房 · 房务核查照片</p><h2 id="inventory-title">它又把房间收拾好了。</h2>
+  <p>水杯换了一边。床边摆着两双拖鞋，有一双鞋尖朝着床底。</p>
+  <details><summary>查看照片背面的记录</summary><p>房务员于 02:16 拍摄。<br>照片里可见房务员的两只手。<br>摄影人员：未登记。</p></details></div>
+</section>
+<section class="section lost-property" data-corruption="5">
+  <p class="label">房务 · 失物招领</p><h2>这几件也是你的。</h2>
+  <div class="lost-cabinets">
+    <details><summary>打开抽屉　A</summary><p>一张未使用的 217 房门卡。塑料表面有两道贴得很近的刮痕。</p></details>
+    <details><summary>打开抽屉　B</summary><p>一张早餐单。两栏都点了你从入夜起一直想吃的东西。</p></details>
+    <details><summary>打开抽屉　C</summary><p>空的。</p><p>抽屉推回去后，里面有人又拉了一下。</p></details>
+  </div>
+</section>
+<section class="false-dawn" data-corruption="5">
+  <div><p class="label">Q1 入夜　/　天亮了</p><h2>早上好。</h2><p>窗帘开了。玻璃后面亮着暖光。</p></div>
+  <p class="dawn-time label"><span>07:00</span><strong>02:17:03</strong></p>
+  <p class="dawn-foot">那是走廊的灯。玻璃的另一边还有一扇 217 房的门。</p>
+</section>
+<section class="descent" id="descent" data-corruption="5" aria-labelledby="ending-title"><div class="screen"><canvas id="face" aria-hidden="true"></canvas><div class="vignette"></div><div class="end-copy"><p id="stamp" class="label">217 房 · 02:17:03</p><h2 id="ending-title">还有一条记录。</h2><p id="end-line">麦克风收录到连续的呼吸。</p><a id="exit" href="#door">去门口</a></div></div></section>
+<section class="door-scene" id="door" data-corruption="6" aria-labelledby="door-title">
+  <div class="door-stage" id="door-stage" data-state="closed" aria-hidden="true">
+    <canvas id="door-figure"></canvas>
+    <div class="door-panel"></div>
+    <div class="door-edge"></div>
+  </div>
+  <div class="door-copy">
+    <p class="label" id="door-label">217 房 · 退房</p>
+    <h2 id="door-title">房卡还在你手里。</h2>
+    <p id="door-status" aria-live="polite">走廊有灯。刷卡就能出去。</p>
+    <button class="button outline" id="door-action" type="button">刷房卡</button>
+    <a href="#top" class="return-link">结束体验</a>
+  </div>
+</section>
+</main>
+<footer><span>Q1 入夜 · 虚构互动故事</span><a href="#top">回到黄昏</a></footer>
+</body>
+</html>

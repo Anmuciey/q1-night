@@ -1,0 +1,85 @@
+.night-chrome {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 10;
+  min-height: 47px; display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  padding: 7px 4vw; color: #eae4d4; background: #252820;
+  border-bottom: 1px solid #757466; font: .78rem/1.4 Consolas, monospace;
+}
+.chrome-brand {font: bold 1.25rem Georgia, serif}
+.chrome-brand span {font: .76rem sans-serif; margin-left: 6px}
+#chrome-link {text-decoration: underline; text-underline-offset: 3px; text-align: right}
+body[data-phase="1"] .night-chrome {background: #e1dccb; color: #3e3930; border-color: #aea490}
+body[data-phase="3"] .night-chrome {background: #141913; border-color: #697663; letter-spacing: .06em}
+body[data-phase="4"] .night-chrome {background: #0b100b; border: 1px solid #665b47; border-left: 5px solid #756449}
+body[data-phase="5"] .night-chrome, body[data-phase="6"] .night-chrome {
+  color: #f0aca1; background: #120605; border-color: #6b342d; letter-spacing: .12em;
+}
+[data-corruption] {scroll-margin-top: 49px}
+.evening {background: #dad7c9}
+.evening-cards {display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; margin-top: 31px}
+.evening-cards details {padding: 22px; background: #e9e6d9; border-top: 2px solid #b0ac98}
+.evening-cards summary {cursor: pointer}
+.evening-cards summary span {display: inline; font-size: .83rem; color: #535547}
+.evening-cards summary strong {display: block; font: 1.55rem/1.4 var(--serif); margin-top: 12px}
+.evening-cards details p {margin: 14px 0 0}
+.mail {display: grid; place-items: center; background: linear-gradient(#b4afa2,#7e7a6e)}
+.mail-letter {width: min(100%,810px); padding: clamp(23px,6vw,80px); background: #e2dccb; box-shadow: 8px 18px #49463950}
+.letter-head {display: flex; justify-content: space-between; align-items: baseline; border-bottom: 1px solid #a39a87; padding-bottom: 13px; margin-bottom: 29px}
+.letter-head strong {font: 1.5rem Georgia, serif}
+.mail h2 {position: relative; isolation: isolate}
+.mail h2 span {position: absolute; left: .09em; top: .07em; color: #95544c; opacity: .29; z-index: -1}
+.mail details {margin: 26px 0; cursor: pointer}
+.mail-footer {border-top: 1px solid #a39a87; padding-top: 16px}
+.mail-footer span {display: inline-block; color: #783e36; transform: translateY(4px) rotate(-2deg)}
+.record .ledger p:nth-last-child(2) {position: relative}
+.record .ledger p:nth-last-child(2):after {
+  content: ""; position: absolute; left: 0; right: 18%; top: 47%; height: 1px; background: #c06f5f86; pointer-events: none;
+}
+.floor {display: grid; grid-template-columns: 1fr 1fr; gap: 5vw; align-items: center; background: #272c26; color: #d8d9c8}
+.floor-map {padding: clamp(14px,4vw,39px); border: 1px solid #7a806d; background: #151a15; box-shadow: 5px 5px #141914}
+.map-grid {display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); margin: 16px 0; gap: 3px}
+.map-grid > * {min-height: 65px; display: grid; place-items: center; text-align: center; border: 1px solid #4a5244; background: #252c24; font: .86rem/1.3 Consolas,monospace}
+.map-grid button {color: #e2d9ad; cursor: pointer; border-style: dashed}
+.map-grid button:hover, .map-grid button[aria-pressed="true"] {background: #514d38}
+.map-grid strong {background: #434735; color: #f1ebc7}
+.floor-map[data-route] .map-grid strong {box-shadow: inset 0 0 0 1px #ad6e5d; color: #ffc0b0}
+.floor-map[data-route] .map-footer {color: #d69989}
+.route-result {min-height: 3.6em; color: #dbbaa9}
+.review .monitor {box-shadow: 6px 7px #090c08, inset 0 0 14px #000; border-color: #525c49}
+.repeat-room {position: relative; isolation: isolate; min-height: 116svh; display: grid; align-items: end; background: #0b0c08; color: #ded6c0; overflow: hidden}
+.repeat-photo, .repeat-photo:after {position: absolute; inset: 0}
+.repeat-photo {
+  z-index: -1; transform: scaleX(-1); 
+  background: linear-gradient(0deg,#080805 5%,transparent 68%),url(room.jpg) center/cover;
+  filter: brightness(.38) saturate(.36);
+}
+.repeat-photo:after {
+  content: ""; background: repeating-linear-gradient(0deg,transparent 0 5px,#11190f8a 6px 8px);
+  box-shadow: inset 0 0 160px #000;
+}
+.repeat-text {position: relative; align-self: stretch; display: grid; align-content: end; justify-items: start; padding: 9vw 8vw 17vh}
+.repeat-text > p:first-child span {display: inline-block; margin-left: 1em; color: #afa38e; transform: translateY(4px)}
+.repeat-text h2 {position: relative; font-size: clamp(4rem,11vw,11rem); text-shadow: 3px 0 #793a31, -2px 1px #517261}
+.repeat-text h2:after {content: attr(data-echo); position: absolute; left: 2px; bottom: -2px; opacity: .4; clip-path: inset(57% 0 18% 0); transform: translateX(11px)}
+.repeat-time {position: absolute; bottom: 1.5rem; right: 7vw}
+.transcript {background: #100c09; color: #cfc2ab; min-height: 100svh}
+.transcript-head {display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; color: #b39882; padding-bottom: 13px; border-bottom: 1px solid #5f4c40}
+.transcript-lines {margin: 28px 0 36px; max-width: 920px}
+.transcript-lines p {display: grid; grid-template-columns: 80px 52px 1fr; align-items: baseline; gap: 16px; padding: 11px 0; margin: 0; border-bottom: 1px solid #3f3228}
+.transcript-lines .speaker {font-size: .9rem}
+.transcript-lines p:last-child {color: #f0a48f; padding-left: 6px; border-bottom-color: #825248}
+.transcript-end {color: #ae8e78}
+.transcript-end span {color: #cc6f60}
+.bedroom .bed-image {background-position: center; filter: brightness(.30) saturate(.44)}
+.descent .end-copy h2 {text-shadow: 2px 2px #49241d,-1px 0 #2f3630,0 2px 16px #070403}
+.door-stage[data-state="inside"]:after {
+  content: ""; position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(0deg,#080100 0%,transparent 44%),repeating-linear-gradient(0deg,transparent 0 3px,#16040344 4px 5px);
+}
+@media(max-width:700px) {
+  .evening-cards,.floor {grid-template-columns: 1fr}
+  .floor {gap: 15px}
+  .night-chrome {font-size: .72rem}
+  .transcript-lines p {grid-template-columns: 67px 38px 1fr; gap: 6px}
+  .transcript-lines time {font-size: .72rem}
+  .repeat-text > p:first-child span {display: none}
+}
